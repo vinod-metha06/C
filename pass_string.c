@@ -1,18 +1,26 @@
 #include<stdio.h>
+#include <string.h>
 
 void main(){
-    int password= 1234;
+   
+    char m_pass[]="1234";
+    char pass[];
+
+
     int x = 5;
     
     
     while (x!=0)
     {
         printf("Enter your password!\n");
-        scanf("%d",&password);
-        //printf("%d\n",password);
+        scanf("%c",&pass);
+        //sprintf(pass_input, "%d", pass);
+        printf("%c\n",pass);
+       //int result =strcmp(m_pass,pass);
+        //printf( result);
 
 
-        if (password == 1234)
+        if (strcmp(m_pass,pass) == 0)
         {
             printf("Access  Granted :) \n");
             break;
